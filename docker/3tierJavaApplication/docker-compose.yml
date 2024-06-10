@@ -3,6 +3,7 @@ services:
     build:
       context: ./Docker-files/DB
     container_name: vprodb
+    restart: always
     ports:
       - "3306:3306"
     environment:
